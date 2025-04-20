@@ -1,0 +1,19 @@
+
+/* header has already container properties, adding stuff for specfic layout stuff*/
+header{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul{
+    display: flex;
+    flex-direction:  row;
+    align-items: center;
+}
+
+header ul li{
+    margin: 1rem;
+}
+
