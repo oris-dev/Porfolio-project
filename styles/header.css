@@ -1,0 +1,104 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+}
+
+/*Drop down menu stuff*/
+
+body:is(menu-open) .header_dropdown{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+
+
+#header_burger_menu {
+    display: block;
+    width: 15%;
+    height: auto;
+}
+
+
+.header_buttons {
+    display: none;
+}
+
+/* general header styles*/
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav button {
+    margin-right: 1rem;
+    font-size: var(--font-size-base);
+    width: 13vw;
+    height: 10vh;
+}
+
+
+/* Tablet breakpoint (600px and up) */
+@media (min-width: 600px) {
+
+
+    /* change menu look depends on size(add burger view) */
+    header {
+        justify-content: space-between;
+    }
+
+
+    #header_burger_menu {
+        display: none;
+    }
+
+    .header_buttons {
+        display: block;
+    }
+
+}
+
+/* Small laptop / Desktop (1024px and up) */
+@media (min-width: 1024px) {
+
+
+    /* change menu look depends on size(add burger view) */
+
+    header {
+        justify-content: space-between;
+    }
+
+    #header_burger_menu {
+        display: none;
+    }
+
+    .header_buttons {
+        display: block;
+    }
+
+
+}
+
+/* Large Desktop (1440px and up) */
+@media (min-width: 1440px) {
+
+    /* change menu look depends on size(add burger view) */
+
+    header {
+        justify-content: space-between;
+    }
+
+    #header_burger_menu {
+        display: none;
+    }
+
+    .header_buttons {
+        display: block;
+    }
+
+
+}

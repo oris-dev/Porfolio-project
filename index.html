@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio website</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="projects.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/font_sizes.css">
 </head>
 <body>
 
@@ -15,20 +17,25 @@
         <!-- left side header   -->
         <h3> Ori Sadowsky </h3>
 
-        <!-- right side header -->
-        <ul class>
-            <li> home </li>
-            <li> contact </li>
-            <li> About  </li>
-        </ul>
+        <!-- right side header on large screens-->
+        <nav>
+            <button class = "header_buttons" aria-label = "home page"> home </button>
+            <button class = "header_buttons" aria-label = "contact page"> contact </button>
+            <button class = "header_buttons" aria-label = "about page"> About  </button>
+        </nav>
+
+        <img src ="assets/burger-menu-svgrepo-com.svg" id = "header_burger_menu" role="button" aria-label="open menu" tabindex="0">
 
             
     </header>
 
    <main class = "container" id = "main-projects">
 
+
+
+        <section  id = "project-information">
         <!-- left side big image of a project-->
-        <img src = "assets/golden_homepage.png" class = "project-img">
+        <img src = "assets/golden_homepage.png" id = "project-img">
 
         <!-- right side text about a project-->
         <article>
@@ -38,9 +45,11 @@
            </p>
         </article>
 
-
+        </section>
 
         <!-- project images-->
+
+        <section id = "project-images">
         <ul>
             
         <img src = "assets/golden_homepage.png" class = "small-img">
@@ -49,6 +58,7 @@
         <img src = "assets/golden_homepage.png"  class = "small-img">
         
         </ul>
+        </section>
 
    </main>
     

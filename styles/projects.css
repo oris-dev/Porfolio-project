@@ -1,0 +1,58 @@
+
+/* some default stuff */
+
+#main-projects{
+  display:flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#project-information{
+  display:flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-direction: column;
+}
+
+#project-img{
+  width: 100vw;
+  height: auto;
+}
+
+
+/* Tablet breakpoint (600px and up) */
+@media (min-width: 600px) {
+  
+  #project-information{
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  #project-img{
+    width: 60vw;
+    height: auto;
+    margin-right: 5vw;
+  }
+
+  #project-information article{
+    width: 35vw;
+  }
+
+
+}
+
+/* Small laptop / Desktop (1024px and up) */
+@media (min-width: 1024px) {
+
+
+
+
+}
+
+/* Large Desktop (1440px and up) */
+@media (min-width: 1440px) {
+
+
+ 
+}
