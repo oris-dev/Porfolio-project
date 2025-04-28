@@ -14,6 +14,8 @@ const nav = document.querySelector("nav");
 function declareStates() {
     document.body.classList.toggle("menu-open", false);
     document.body.classList.toggle("is-desktop", false);
+    document.body.classList.toggle("visable-projects", true);
+    document.body.classList.toggle("visable-about", false);
 }
 
 function listenToDropDown(){

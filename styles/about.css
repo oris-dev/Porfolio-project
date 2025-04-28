@@ -1,0 +1,16 @@
+#about{
+    text-align:center;
+}
+
+#technologies_library, #design-library, #contact-library{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+#technologies_library img, #design-library img, #contact-library img{
+    width: 8vw;
+    height: auto
+}

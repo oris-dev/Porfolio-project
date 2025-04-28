@@ -19,3 +19,8 @@ I will design anything based on your needs to create a deep, clear undestanding 
 in order to excel your buisness. 
 
 
+Contanct Icons:
+
+mail: orisadowsky.dev@gmail.com
+linkedin: www.linkedin.com/in/ori-sadowsky
+github
