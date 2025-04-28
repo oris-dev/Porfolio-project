@@ -1,58 +1,82 @@
 
 /* some default stuff */
 
-#main-projects{
-  display:flex;
-  justify-content: center;
-  align-content: center;
-}
-
 #project-information{
   display:flex;
   justify-content: center;
-  align-content: flex-start;
-  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+
 }
 
-#project-img{
-  width: 100vw;
+.project-cards{
+  border: 2px black solid;
+  text-align:center;
+  width: 84vw;
+  margin-bottom: 1em;
+  margin-right: 1.5em;
+  padding: 0.5em;
+}
+
+.project-img{
+  width: 78vw;
   height: auto;
 }
+
+
+.project-cards p{
+  font-size: 0.75em;
+}
+
+.project-cards h5{
+  font-size: 1em;
+}
+
 
 
 /* Tablet breakpoint (600px and up) */
 @media (min-width: 600px) {
   
-  #project-information{
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: row;
-  }
-
-  #project-img{
-    width: 60vw;
-    height: auto;
-    margin-right: 5vw;
-  }
-
-  #project-information article{
-    width: 35vw;
-  }
-
+  /*change nothing*/
 
 }
 
 /* Small laptop / Desktop (1024px and up) */
 @media (min-width: 1024px) {
 
+  .project-cards{
+    width: 35vw;
+    height: auto;
+    border: 2px black solid;
+    text-align:center;
+    margin-left: 1em;
+    margin-bottom: 1em;
+  }
 
-
+  .project-img{
+    width: 25vw;
+    height: auto;
+  
+  }
 
 }
 
 /* Large Desktop (1440px and up) */
 @media (min-width: 1440px) {
 
+  .project-cards{
+    width: 38vw;
+    height: auto;
+    border: 2px black solid;
+    text-align:center;
+    margin-left: 1em;
+    margin-bottom: 1em;
+  }
 
+  .project-img{
+    width: 36vw;
+    height: auto;
+  
+  }
  
 }

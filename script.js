@@ -1,4 +1,4 @@
-const burger = document.getElementById("header_burger_menu");
+const burger = document.getElementById("header_burger_pic");
 const nav = document.querySelector("nav");
 
 
@@ -17,9 +17,9 @@ function declareStates() {
 }
 
 function listenToDropDown(){
-   if(document.body.classList("is-desktop") === false){
+   if(!document.body.classList.contains("is-desktop")){
      burger.addEventListener("click", () => {
-        document.body.classList.toggle("menu-open", true);
+        document.body.classList.toggle("menu-open");
      })
    } 
 }

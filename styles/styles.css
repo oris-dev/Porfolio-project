@@ -5,6 +5,12 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  /*For testing and understanding dimensions*/
+  *{
+    border: 2px red solid;
+  }
+
   
   html {
     width: 100vw;
@@ -17,8 +23,11 @@
     color: #333;
   }
 
-  .displayed{
-    display: block;
+  main{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
   }
 
   img{
@@ -94,13 +103,13 @@
 /* Small laptop / Desktop (1024px and up) */
 @media (min-width: 1024px) {
   .container{
-    padding: 5vw;
+    padding: 2.5vw;
   }
 }
 
 
 @media (min-width: 1440px) {
   .container{
-    padding: 5vw;
+    padding: 2.5vw;
   }
 }

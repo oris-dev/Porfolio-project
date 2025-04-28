@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,58 +10,107 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/projects.css">
     <link rel="stylesheet" href="styles/font_sizes.css">
+    <link rel="stylesheet" href="styles/intro.css">
 </head>
+
 <body>
 
-    <header class = "container">
-        
+    <header class="container">
+
         <!-- left side header   -->
         <h3> Ori Sadowsky </h3>
 
         <!-- right side header on large screens-->
-        <nav>
-            <button class = "header_buttons" aria-label = "home page"> home </button>
-            <button class = "header_buttons" aria-label = "contact page"> contact </button>
-            <button class = "header_buttons" aria-label = "about page"> About  </button>
+        <nav id="header_menu">
+            <button class="header_buttons" aria-label="home page"> home </button>
+            <button class="header_buttons" aria-label="contact page"> contact </button>
+            <button class="header_buttons" aria-label="about page"> About </button>
         </nav>
 
-        <img src ="assets/burger-menu-svgrepo-com.svg" id = "header_burger_menu" role="button" aria-label="open menu" tabindex="0">
 
-            
+        <img src="assets/burger-menu-svgrepo-com.svg" id="header_burger_pic" role="button" aria-label="open menu"
+            tabindex="0">
+
+        <nav id="header_dropdown_menu">
+            <button class="header_dropdown" aria-label="home page"> home </button>
+            <button class="header_dropdown" aria-label="contact page"> contact </button>
+            <button class="header_dropdown" aria-label="about page"> About </button>
+        </nav>
+
     </header>
 
-   <main class = "container" id = "main-projects">
+
+    <main class="container">
+
+        <section id="intro" class="container">
+
+            <h1> Hi, im Ori </h1>
 
 
-
-        <section  id = "project-information">
-        <!-- left side big image of a project-->
-        <img src = "assets/golden_homepage.png" id = "project-img">
-
-        <!-- right side text about a project-->
-        <article>
-           <h2> This is a sample project title </h2>
-           <p> 
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto rem illo porro quam fugiat. Consectetur minima.
-           </p>
-        </article>
+            <article id = "intro-text">
+            A Front-End developer,
+            with a deep understanding to human behavior - I listen carefully and deeply to my clients.
+            Working each day to make the world a better place I seek for meaningful and impactful works.
+            </article>
 
         </section>
 
-        <!-- project images-->
+        <section id="project-information" class="container">
 
-        <section id = "project-images">
-        <ul>
-            
-        <img src = "assets/golden_homepage.png" class = "small-img">
-        <img src = "assets/golden_homepage.png"  class = "small-img">
-        <img src = "assets/golden_homepage.png"  class = "small-img">
-        <img src = "assets/golden_homepage.png"  class = "small-img">
-        
-        </ul>
+
+            <!-- projects section -->
+            <article class="project-cards">
+                <img src="assets/golden_homepage.png" class="project-img">
+                <h5> This is a sample project title </h5>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto rem illo porro quam
+                    fugiat. Consectetur minima.
+                </p>
+            </article>
+
+            <article class="project-cards">
+                <img src="assets/golden_homepage.png" class="project-img">
+                <h5> This is a sample project title </h5>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto rem illo porro quam
+                    fugiat. Consectetur minima.
+                </p>
+            </article>
+
+            <article class="project-cards">
+                <img src="assets/golden_homepage.png" class="project-img">
+                <h5> This is a sample project title </h5>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto rem illo porro quam
+                    fugiat. Consectetur minima.
+                </p>
+            </article>
+
+            <article class="project-cards">
+                <img src="assets/golden_homepage.png" class="project-img">
+                <h5> This is a sample project title </h5>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto rem illo porro quam
+                    fugiat. Consectetur minima.
+                </p>
+            </article>
+
+            <article class="project-cards">
+                <img src="assets/golden_homepage.png" class="project-img">
+                <h5> This is a sample project title </h5>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto rem illo porro quam
+                    fugiat. Consectetur minima.
+                </p>
+            </article>
+
+
+
         </section>
 
-   </main>
-    
+
+    </main>
+
 </body>
+
 </html>

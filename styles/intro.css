@@ -1,0 +1,15 @@
+
+#intro{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro-text{
+    text-align: center;
+    font-size: 0.75em;
+    width: 80vw;
+    margin-bottom: 5vh;
+}

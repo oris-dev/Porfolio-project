@@ -2,43 +2,78 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 10vh;
+    margin-bottom: 1em;
+}
+
+header h3{
+    margin: 0;
 }
 
 /*Drop down menu stuff*/
 
-body:is(menu-open) .header_dropdown{
-    display: flex;
-    justify-content: flex-end;
+
+#header_dropdown_menu{
+    justify-content: space-between;
+    align-items: flex-start;
     flex-direction: column;
+    margin-top: 21vh;
+    margin-left: 70%;
+    z-index: 2;
+    position: absolute;
+}
+
+#header_dropdown_menu button{
+    background-color: white;
+    width: 25vw;
+    height: 5vh;
+    text-align: center;
+    padding: 3%;
+    font-size: 1em;
 }
 
 
+/* header dropdown logic: when .menu-open works header_dropdown is displayed*/
 
-#header_burger_menu {
-    display: block;
+body:is(.menu-open) .header_dropdown{
+    display: flex;
+}
+
+body:not(.menu-open) .header_dropdown{
+    display: none;
+}
+
+/* burger icon */
+
+#header_burger_pic {
+    display: inline-block;
     width: 15%;
     height: auto;
+    margin-right: 1em;
 }
 
+#header_burger_pic:hover{
+    background-color:red;
+}
 
+/* make sure buttons arent displaying */
 .header_buttons {
     display: none;
 }
 
 /* general header styles*/
 
-header nav {
+#header_menu {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
+    align-items: center;
 }
 
-header nav button {
-    margin-right: 1rem;
-    font-size: var(--font-size-base);
-    width: 13vw;
-    height: 10vh;
+#header_menu button {
+    font-size: 1em;
+    width: 15vw;
+    height: auto;
 }
 
 
@@ -51,13 +86,19 @@ header nav button {
         justify-content: space-between;
     }
 
+    #header_menu{
+    }
 
-    #header_burger_menu {
+    #header_burger_pic {
         display: none;
     }
 
     .header_buttons {
         display: block;
+    }
+
+    .header_dropdown{
+        display: none;
     }
 
 }
@@ -72,7 +113,7 @@ header nav button {
         justify-content: space-between;
     }
 
-    #header_burger_menu {
+    #header_burger_pic {
         display: none;
     }
 
@@ -80,6 +121,9 @@ header nav button {
         display: block;
     }
 
+    .header_dropdown{
+        display: none;
+    }
 
 }
 
@@ -92,7 +136,7 @@ header nav button {
         justify-content: space-between;
     }
 
-    #header_burger_menu {
+    #header_burger_pic {
         display: none;
     }
 
@@ -100,5 +144,8 @@ header nav button {
         display: block;
     }
 
+    .header_dropdown{
+        display: none;
+    }
 
 }
