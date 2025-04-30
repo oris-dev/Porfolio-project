@@ -14,8 +14,9 @@
   text-align:center;
   width: 84vw;
   margin-bottom: 1em;
-  margin-right: 1.5em;
-  padding: 0.5em;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .project-img{

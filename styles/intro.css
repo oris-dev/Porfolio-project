@@ -5,6 +5,11 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    background-color: var(--dark-background-color);
+}
+
+#intro h3{
+    text-align: center;
 }
 
 #intro-text{
